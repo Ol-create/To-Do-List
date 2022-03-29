@@ -1,3 +1,53 @@
 body {
-    background-color: rgba(218, 126, 14, 0.692);
+    background-color: rgba(190, 185, 179, 0.692);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
+.app-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    filter: drop-shadow(9px 9px 6px rgb(46, 38, 38));
+    max-width: 350px;
+}
+
+form {
+    width: 100%;
+}
+
+.todo-header {
+    padding-left: 15px;
+}
+
+
+.todo-input, button {
+    width: 90%;
+    margin-left: 15px;
+}
+
+.todo-input {
+    padding-left: 10px;
+}
+
+.task-text {
+    border-bottom: 1px solid rgb(226, 223, 223);
+    padding-left: 10px;
+}
+
+.check {
+    margin: 0 10px 0 10px;
+}
+
+
+button {
+    position: relative;
+    bottom: 10px;
+    border: none;
 }

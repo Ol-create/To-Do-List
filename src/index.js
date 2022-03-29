@@ -15,21 +15,24 @@ function addList(){
   // Create DOM Variable
 let listContainer = document.querySelector('.list-container');
 
+  for(let i=0; i<todoTask.length; i++){
+  // let checkbox = document.createElement('input');
+  let list = document.createElement('div');
 
+  //add property to DOM Element
+  list.classList.add('list');
+  // checkbox.setAttribute =("type", "checkbox");
 
-  for(let i=0; i<todoTask.length; i+=1){
-
-    let list = document.createElement('li');
-
-//add property to DOM Element
-list.classList.add('list');
     // Append Dom elements to parent
+    // list.appendChild(checkbox);
     listContainer.appendChild(list);
-    list.innerHTML = `${todoTask[i]['description']}`;
-    // console.log(todoTask[i][description]);
-
+    list.innerHTML = ` <p contenteditable=true class="task-text"><input type="checkbox" class="check">${todoTask[i]['description']}</p>`;
+    
+    //Update todoTask index.
+    todoTask[i]['index'] = i;  
   }
 }
+
 
 //Create delete method
 
@@ -38,4 +41,6 @@ list.classList.add('list');
 //Create drag method
 
 //Create localStorage
+
+
 addList();
