@@ -67,3 +67,43 @@ section {
   list-style: none;
 }
 
+.activity {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+  position: relative;
+}
+
+.activity p {
+  margin: 0 0 0 10px;
+  width: 70%;
+  outline: none;
+}
+
+.decoration {
+  text-decoration: line-through;
+}
+
+.move,
+.delete {
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  color: #555;
+  margin-right: 15px;
+}
+
+.clearAll {
+  text-decoration: none;
+  color: #777;
+  padding: 10px 0;
+  background-color: #ddd;
+  width: 100%;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
