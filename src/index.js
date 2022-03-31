@@ -12,3 +12,20 @@ import './style.css';
 
 const divBox = document.createElement('div');
 const list = document.querySelector('#list');
+
+
+for(let i=0; i<todoTask.length; i++){
+  divBox.innerHTML += `
+      <li class="activity" completed = ${todoTask[i]['completed']} index = ${todoTask[i]['index']}>
+        <input type="checkbox" class="checkbox">
+        <p class= 'toDo' contenteditable="true">${todoTask[i]['description']}</p>
+        <a class="move">
+          <span class="material-icons-outlined">more_vert</span>
+        </a>
+        <a class="delete hide">
+          <span class="material-icons-outlined">delete</span>
+        </a>
+      </li>
+    `;
+    list.appendChild(divBox);
+};
