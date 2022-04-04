@@ -8,6 +8,8 @@
  - You can mark task as completed.
  - You can edit task and clear completed task(s) etc.
 
+[Live link](https://ol-create.github.io/To-Do-List/)
+
 ## Built With
 
 - html
